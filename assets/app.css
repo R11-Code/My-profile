@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +156,7 @@ ul li > div .elixir {
 
 .bottom {
   position: absolute;
-  top: 83%;
+  top: 85%;
   left: 10%;
   padding: 0 30px;
 }

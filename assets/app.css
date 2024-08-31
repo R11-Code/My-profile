@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ section {
 .card {
   position: relative;
   width: 550px;
-  height: 400px;
+  height: 420px;
   backdrop-filter: blur(25px);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
@@ -183,7 +183,7 @@ ul li > div .elixir {
   transform: scale(1);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .card {
     margin: 5px;
     width: calc(100% - 10px);

@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/R11-Code/My-profile?style=flat-square)
+![GitHub License](https://img.shields.io/github/license/R11-code/My-profile?style=flat-square)
 
 # My Profile
 Hello! I'm just a Junior Developer.

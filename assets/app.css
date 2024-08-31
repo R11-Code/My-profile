@@ -136,7 +136,7 @@ ul li > div .elixir {
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  margin: 5px 5px;
+  margin: 0 5px;
   transition: all .4s;
   cursor: pointer;
   text-decoration: none;
@@ -156,7 +156,7 @@ ul li > div .elixir {
 
 .bottom {
   position: absolute;
-  top: 80%;
+  top: 83%;
   left: 10%;
   padding: 0 30px;
 }

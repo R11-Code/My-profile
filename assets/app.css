@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("./background.webp") center/cover no-repeat fixed;
+  color: #fff;
+}
+
+section {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 550px;
+  height: 350px;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 2px solid #d5cccc24;
+}
+
+.top span {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.top i {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 30%;
+  transition: background 0.3s;
+}
+
+.top i:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.top p {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.top i:hover ~ p {
+  opacity: 1;
+  transition: .4s;
+}
+
+.middle {
+  display: flex;
+  padding: 20px 30px 0;
+}
+
+.middle .left p {
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.middle .left p > span {
+  color: #FF2C2C;
+  font-weight: bold;
+}
+
+.middle img {
+  width: 170px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  outline: 3px dashed rgba(255, 255, 255, 0.7);
+}
+
+.middle .right {
+  margin: 20px 0 10px 50px;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+ul li > div {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+ul li > div .elixir {
+  height: 100%;
+  background-color: #FFF;
+  width: 0; /* Default width set to 0 */
+  transition: width 0.5s ease;
+}
+
+/* Menggunakan CSS custom properties untuk mengatur lebar berdasarkan data-width */
+.elixir[data-width="96"] { width: 96%; }
+.elixir[data-width="93"] { width: 93%; }
+.elixir[data-width="87"] { width: 87%; }
+.elixir[data-width="35"] { width: 35%; }
+
+.social-icon {
+  display: flex;
+}
+
+.social-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px 5px;
+  transition: all .4s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icon i {
+  font-size: 20px;
+}
+
+.social-icon a:hover {
+  color: #3c79db;
+  background: #fff;
+  transform: translateY(-4px);
+  box-shadow: inset 0 0 0 15px #fff;
+}
+
+.bottom {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  padding: 0 30px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background: #fffaf0ff;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: .3s ease;
+  font-size: 1.5em;
+  font-size: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: .2s ease;
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 576px) {
+  .card {
+    margin: 5px;
+    width: calc(100% - 10px); /* Ensure the card takes full width minus the margins */
+  }
+  
+  .bottom {
+    left: 15%;
+  }
+}
